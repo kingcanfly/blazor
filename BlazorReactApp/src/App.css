@@ -1,0 +1,23 @@
+.App{
+  text-align: center;
+}
+
+input {
+  margin: 0.5rem;
+}
+
+label {
+  margin: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+﻿@using SomeDomain.Entities
+@using SomeDomain.Validators
+@using FluentValidation.Results
+
+@code {
+    [JSInvokable]
+    public static Task<ValidationResult> ValidateProduct(Product product)
+    {
+        var validator = new ProductValidator();
+        return Task.FromResult(validator.Validate(product));
+    }
+}
